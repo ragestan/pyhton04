@@ -4,22 +4,6 @@ from typing import Any
 def ft_statistics(*args: Any, **kwargs: Any) -> None:
     """
     Calculate and display statistics for given data.
-
-    This function computes various statistical measures (mean, median,
-    quartile, standard deviation, and variance) based on the provided
-    numerical arguments and keyword arguments specifying which statistics
-    to compute.
-
-    Args:
-        *args (Any): Variable number of numerical arguments representing data.
-        **kwargs (Any): Keyword arguments specifying which statistics to compute.
-                        Valid keys: "mean", "median", "quartile", "std", "var"
-
-    Returns:
-        None
-
-    Raises:
-        None (errors are caught and printed to stdout)
     """
     if not args:
         for key in kwargs.keys():
@@ -68,21 +52,8 @@ def ft_statistics(*args: Any, **kwargs: Any) -> None:
 
 def main() -> None:
     """
-    Main function demonstrating ft_statistics usage.
-
-    Provides test cases to verify that statistics calculations work
-    correctly and handle edge cases appropriately.
-
-    Args:
-        None
-
-    Returns:
-        None
-
-    Raises:
-        None
+    Main function
     """
-    pass
 
 
 if __name__ == "__main__":
